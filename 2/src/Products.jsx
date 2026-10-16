@@ -28,7 +28,11 @@ const Products = () => {
   };
 
   // BEGIN (write your solution here)
-
+useEffect(() => {
+  getProducts().then((data) => {
+    setProducts(data);
+  });
+}, []);
   // END
 
   return (
@@ -52,3 +56,4 @@ const Products = () => {
 };
 
 export default Products;
+

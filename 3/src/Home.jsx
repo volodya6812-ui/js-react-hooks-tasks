@@ -1,10 +1,12 @@
+
 import React, { useContext } from 'react';
 
 import ThemeContext from './contexts';
 
 const Home = () => {
   // BEGIN (write your solution here)
-
+const { theme } = useContext(ThemeContext);
+const className = theme.className;
   // END
 
   return (
@@ -15,3 +17,4 @@ const Home = () => {
 };
 
 export default Home;
+
